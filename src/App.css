@@ -1,38 +1,106 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.App{
+  background-color: rgb(32, 32, 67)   ;
+  box-sizing: border-box;
+  margin-left: 25%;
+  margin-top: 100px;
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+color: white;
+text-transform: uppercase;
+padding: 0.352rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-btn{
+  background-color: rgb(117, 42, 255) ;
+  color:white;
+  border:none;
+  padding:0.85rem;
+  cursor: pointer;
+  margin-top:-5px;
+  font-family: Roboto ,Arial,  sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-input{
+  background-color: transparent;
+  border:1px solid rgb(117, 42, 255) ;
+  height:30px;
+  width: 300px;
+  padding: 0.352rem;
+  font-family: Roboto ,Arial,  sans-serif;
+background-color: aliceblue;  
+color: rgb(47, 46, 46);
+margin-top: 10px;
+}
+.todoCard{
+  background-color: aliceblue;
+  color: rgb(112, 227, 12);
+  width: 80%;
+  margin-left: 10%;
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10%;
+  justify-content: space-around;
+
+}
+.todoCardComplete{
+  background-color: aliceblue;
+  color: rgb(244, 2, 2);
+  width: 80%;
+  margin-left: 10%;
+  height: 70px;
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+
+}
+
+.todotext{
+  background-color:rgb(117, 42, 255) ;
+  height:20px;
+  width: 380px;
+  color : white;
+  margin-left: 150px;
+  margin-top:20px;
+  border-radius: 2px;
+  font-family:Roboto ,Arial,  sans-serif; 
+  text-align:left;
+  padding:0.55rem;
+}
+.text{
+  /* margin-top: 30px; */
+  /* padding: 15px; */
+}
+
+.pen{
   color: white;
+  margin-left: 330px;
+  position: relative;
+  top: -45px;
 }
 
-.App-link {
-  color: #61dafb;
+.trash{
+  color: rgba(31, 30, 30, 0.816);
+  /* margin-left: 10px; */
+  /* position: relative; */
+  font-size: 30px;
+  padding-top: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.complete{
+  color: rgb(244, 2, 2);
+  font-size: 30px;
+  padding-top: 25px;
+}
+.notComplete{
+  color: rgb(112, 227, 12);
+  font-size: 30px;
+  padding-top: 25px;
+
 }
